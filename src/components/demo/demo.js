@@ -1,14 +1,26 @@
 
+import Vue from 'vue'
+// new Vue({
+//     el:'#app',
+//     data: {
+//         item: {
+//             title: 'wo shi zhong guo ren '
+//         }
+//     },
+//     methods:{
+//         readBook:function(){
+//             location.href = "/reader"
+//         }
+//     }
+// });
+
 new Vue({
-    el:'#app',
     data: {
         item: {
             title: 'wo shi zhong guo ren '
         }
     },
-    methods:{
-        readBook:function(){
-            location.href = "/reader"
-        }
+    render: function(h){
+      return h('h1', 'Hi Vue')
     }
-});
+  }).$mount('#app')

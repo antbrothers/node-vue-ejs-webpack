@@ -7,7 +7,7 @@ function resolve(dir) {
 module.exports = {
     entry: {
         app: path.resolve(__dirname, '..', 'src/app.js'),
-        common: path.resolve(__dirname, '..', 'src/verdors.js')
+        common: ['vue', path.resolve(__dirname, '..', 'src/verdors.js')]
     },
     module: {
         rules: [
